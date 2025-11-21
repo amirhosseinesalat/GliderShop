@@ -2,6 +2,7 @@ import { TbListDetails, TbShoppingBagCheck } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { shortenText } from "../helpers/helper";
 import styles from "./Card.module.css";
+
 function Card({ data }) {
   const { id, title, image, price } = data;
   return (
