@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 import { ImSearch } from "react-icons/im";
 import { useEffect, useState } from "react";
 import { FaListUl } from "react-icons/fa";
+import { filterProducts, searchProducts } from "../helpers/helper";
 function ProductsPage() {
   const products = useProducts();
   const [displayed, setDisplayed] = useState([]);
@@ -14,7 +15,9 @@ function ProductsPage() {
     setDisplayed(products);
   }, [products]);
   useEffect(() => {
-    console.log(query);
+    let finalProducts = searchProducts(products, query.search);
+    finalProducts = filterProducts(finalProducts, query.category);
+    setDisplayed(finalProducts);
   }, [query]);
   const searchHandler = () => {
     setQuery((query) => ({ ...query, search }));
