@@ -21,17 +21,24 @@ export const filterProducts = (products, category) => {
     (p) => p.category.toLowerCase() === category.toLowerCase()
   );
 };
-export const createQueryObject = (currentQuery, newQuery) => {
+export const createQueryObject = (currentQuery = {}, newQuery) => {
   if (newQuery.category === "all") {
     const { category, ...rest } = currentQuery;
     return rest;
   }
-  if (newQuery.category === "") {
-    const { search, ...rest } = currentQuery;
-    return rest;
-  }
+
   return {
     ...currentQuery,
     ...newQuery,
+  };
+};
+
+export const getInitialQuery = (searchParams) => {
+  const category = searchParams.get("category");
+  const search = searchParams.get("search");
+
+  return {
+    category: category ?? "",
+    search: search ?? "",
   };
 };
