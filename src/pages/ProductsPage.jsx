@@ -27,7 +27,7 @@ function ProductsPage() {
   }, [products]);
 
   useEffect(() => {
-      if (!query) return;
+    if (!query) return;
     setSearchParams(query);
     setSearch(query.search || "");
 
@@ -47,7 +47,7 @@ function ProductsPage() {
             <Card key={p.id} data={p} />
           ))}
         </div>
-        <SideBar setQuery={setQuery} />
+        <SideBar query={query} setQuery={setQuery} />
       </div>
     </>
   );
