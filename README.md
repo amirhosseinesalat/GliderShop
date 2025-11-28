@@ -1,16 +1,110 @@
-# React + Vite
+🛒 React Shop & Cart App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully functional shopping application built with React.js, featuring product listing, product details, cart management, quantity control, checkout system, and beautiful UI components.
 
-Currently, two official plugins are available:
+✨ Features
+🛍️ Shopping
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Display a list of products
 
-## React Compiler
+View product details
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clean and responsive product cards
 
-## Expanding the ESLint configuration
+Beautiful UI with CSS Modules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛒 Shopping Cart
+
+Add product to cart
+
+Increase & decrease quantity
+
+Remove a product
+
+Real-time cart summary
+
+Auto-calculated total price, item count, and order status
+
+Checkout system
+
+Empty cart UI page
+
+🚨 Extra Features
+
+Modern 404 Error Page
+
+Global state management with Context API
+
+Fully component-based and scalable architecture
+
+Reusable helpers and custom hooks
+
+🛠️ Tech Stack
+Technology Purpose
+React.js Core framework
+React Router DOM Page routing
+Context API Global state management
+CSS Modules Component-based styling
+React Icons Icons & UI symbols
+Custom Hooks Product fetching & logic
+
+
+🚀 Getting Started
+
+Clone the repository:
+
+git clone <your-repo-link>
+cd react-shop-cart
+
+Install dependencies:
+
+npm install
+
+Run the project:
+
+npm run dev
+
+🧩 How It Works
+➕ Add to Cart
+
+Click the Add button on any product card.
+The item will be added with quantity set to 1.
+
+🔢 Increase / Decrease
+
+Inside the basket:
+
+➕ Increase quantity
+
+➖ Decrease quantity
+
+❌ Remove the item
+
+All values update automatically.
+
+🧮 Cart Summary
+
+The sidebar shows:
+
+Total price
+
+Total number of items
+
+Order status
+
+🎉 Checkout
+
+Click Checkout → Cart resets & status becomes Completed.
+
+🕳️ Empty Basket Page
+
+If the cart is empty, a beautiful UI with animation/logo appears.
+
+🚨 404 Page
+
+Navigating to a wrong URL displays a modern error page.
+
+👨‍💻 Developer
+
+Amirhossein Esalat
+📧 sltamirhosein@gmail.com
