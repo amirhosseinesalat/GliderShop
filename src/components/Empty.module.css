@@ -1,0 +1,44 @@
+.emptyWrapper {
+  margin-top: 80px;
+  text-align: center;
+  color: #555;
+}
+
+.emptyWrapper h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #fe5d42;
+}
+
+.emptyWrapper p {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #777;
+}
+
+.cartAnimation {
+  display: flex;
+  justify-content: center;
+  animation: bounce 1.6s infinite;
+}
+
+.svgIcon {
+  width: 140px;
+  height: 140px;
+  stroke: #fe5d42;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
