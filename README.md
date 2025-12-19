@@ -1,59 +1,66 @@
 🛒 React Shop & Cart App
 
-A modern and fully functional shopping application built with React.js, featuring product listing, product details, cart management, quantity control, checkout system, and beautiful UI components.
+A simple shopping and cart application built with React.
+This project was created to practice state management, routing, and building a scalable component-based structure for an e-commerce style app.
 
-✨ Features
-🛍️ Shopping
+The focus is on cart logic, quantity control, clean UI, and user experience.
+
+Features
+Products
 
 Display a list of products
 
-View product details
+Product detail pages
 
-Clean and responsive product cards
+Responsive product cards
 
-Beautiful UI with CSS Modules
+Clean UI styled with CSS Modules
 
-🛒 Shopping Cart
+Cart
 
-Add product to cart
+Add products to cart
 
-Increase & decrease quantity
+Increase and decrease quantity
 
-Remove a product
+Remove items from cart
 
-Real-time cart summary
+Real-time cart updates
 
-Auto-calculated total price, item count, and order status
+Automatic calculation of total price and item count
 
-Checkout system
+Checkout functionality
 
-Empty cart UI page
+Dedicated empty cart page
 
-🚨 Extra Features
+Additional
 
-Modern 404 Error Page
+Custom 404 error page
 
-Global state management with Context API
+Global state management using Context API
 
-Fully component-based and scalable architecture
+Reusable components and helpers
 
-Reusable helpers and custom hooks
+Custom hooks for logic separation
 
-🛠️ Tech Stack
-Technology Purpose
-React.js Core framework
-React Router DOM Page routing
-Context API Global state management
-CSS Modules Component-based styling
-React Icons Icons & UI symbols
-Custom Hooks Product fetching & logic
+Tech Stack
 
+React.js
 
-🚀 Getting Started
+React Router DOM
+
+Context API
+
+CSS Modules
+
+React Icons
+
+Custom Hooks
+
+Getting Started
 
 Clone the repository:
 
-git clone <your-repo-link>
+git clone https://github.com/your-username/react-shop-cart.git
 cd react-shop-cart
 
 Install dependencies:
@@ -64,27 +71,27 @@ Run the project:
 
 npm run dev
 
-🧩 How It Works
-➕ Add to Cart
+Application Logic
+Add to Cart
 
-Click the Add button on any product card.
-The item will be added with quantity set to 1.
+Click the Add to Cart button on any product.
+The product will be added with an initial quantity of 1.
 
-🔢 Increase / Decrease
+Quantity Control
 
-Inside the basket:
+Inside the cart, you can:
 
-➕ Increase quantity
+Increase quantity
 
-➖ Decrease quantity
+Decrease quantity
 
-❌ Remove the item
+Remove the product completely
 
-All values update automatically.
+All cart values update automatically.
 
-🧮 Cart Summary
+Cart Summary
 
-The sidebar shows:
+The cart section displays:
 
 Total price
 
@@ -92,19 +99,19 @@ Total number of items
 
 Order status
 
-🎉 Checkout
+Checkout
 
-Click Checkout → Cart resets & status becomes Completed.
+After clicking Checkout, the cart resets and the order status changes to completed.
 
-🕳️ Empty Basket Page
+Empty Cart
 
-If the cart is empty, a beautiful UI with animation/logo appears.
+If the cart is empty, a dedicated UI page is shown instead of the cart list.
 
-🚨 404 Page
+404 Page
 
-Navigating to a wrong URL displays a modern error page.
+Navigating to an invalid route displays a custom 404 error page.
 
-👨‍💻 Developer
+Developer
 
 Amirhossein Esalat
-📧 sltamirhosein@gmail.com
+Email: sltamirhosein@gmail.com
